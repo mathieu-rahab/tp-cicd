@@ -41,3 +41,6 @@ jobs:
       - name: Publier l'image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/tp-cicd:latest
+  
+    deploy:
+      needs: docker
