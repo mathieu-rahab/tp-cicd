@@ -42,5 +42,5 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/tp-cicd:latest
   
-    deploy:
-      needs: docker
+  deploy:
+    needs: docker
